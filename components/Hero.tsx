@@ -41,7 +41,7 @@ export default function Hero() {
                             md:col-start-13 md:col-end-25 md:row-start-13 md:row-end-15  md
                             flex flex-col justify-center text-center"
                 >
-                    <button className="mx-auto px-[2em] py-[1em] border-1 w-fit h-fit font-[510] text-[calc((0.9-1)*1.2vw+1rem)] hover:text-[var(--primary)] hover:bg-[var(--accent)] border-[var(--accent)] transition-colors duration-400 ease-linear">
+                    <button className="mx-auto px-[2em] py-[1em] border-1 border-[-var(--acce)] w-fit h-fit font-[510] text-[calc((0.9-1)*1.2vw+1rem)] hover:text-[var(--primary)] hover:bg-[var(--accent)] border-[var(--accent)] transition-colors duration-400 ease-linear">
                         CONNECT WITH ME →
                     </button>
                 </div>

@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    scroll-margin-top: 100px;
+}
+
 :root {
-    --primary: #f5f1ed;
+    --primary: #f7eee6;
     --secondary: #f0e0d1;
     --accent: #2c3e50;
 
@@ -11,6 +19,15 @@
     );
 
     --heading: calc((4.5 - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
+}
+
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
 }
 
 body {
@@ -46,7 +63,7 @@ body {
     overflow-x: clip;
 }
 
-.section-grid {
+.section-grid-resonance {
     --grid-gap: 0px;
     --site-gutter: 6vw;
     --site-max-width: 3000px;
@@ -76,6 +93,36 @@ body {
     overflow-x: clip;
 }
 
+.section-grid-recognition {
+    --grid-gap: 0px;
+    --site-gutter: 6vw;
+    --site-max-width: 3000px;
+
+    --container-width: min(
+        var(--site-max-width),
+        calc(100vw - var(--site-gutter) * 2)
+    );
+
+    --grid-gutter: calc(var(--site-gutter) - var(--grid-gap));
+
+    --cell-max-width: calc(
+        (var(--site-max-width) - (var(--grid-gap) * (8 - 1))) / 8
+    );
+    --site-title-font-font-size-value: 2;
+
+    display: grid;
+    grid-template-columns:
+        minmax(var(--grid-gutter), 1fr)
+        repeat(8, minmax(0, var(--cell-max-width)))
+        minmax(var(--grid-gutter), 1fr);
+
+    grid-template-rows: repeat(24, minmax(24px, auto));
+    column-gap: var(--grid-gap);
+    row-gap: 11px;
+
+    overflow-x: clip;
+}
+
 @media (min-width: 768px) {
     .hero-grid {
         --site-gutter: 3.75vw;
@@ -97,7 +144,7 @@ body {
         );
     }
 
-    .section-grid {
+    .section-grid-resonance {
         --site-gutter: 3.75vw;
 
         --row-height-scaling-factor: 0.0215;
@@ -121,6 +168,40 @@ body {
 
         grid-template-rows: repeat(
             17,
+            minmax(
+                calc(var(--container-width) * var(--row-height-scaling-factor)),
+                auto
+            )
+        );
+
+        overflow-x: clip;
+    }
+
+    .section-grid-recognition {
+        --site-gutter: 3.75vw;
+
+        --row-height-scaling-factor: 0.0215;
+
+        --container-width: min(
+            var(--site-max-width),
+            calc(100vw - var(--site-gutter) * 2)
+        );
+
+        --grid-gutter: calc(var(--site-gutter) - var(--grid-gap));
+
+        --cell-max-width: calc(
+            (var(--site-max-width) - (var(--grid-gap) * (8 - 1))) / 8
+        );
+
+        display: grid;
+
+        grid-template-columns:
+            minmax(var(--grid-gutter), 1fr)
+            repeat(24, minmax(0, var(--cell-max-width)))
+            minmax(var(--grid-gutter), 1fr);
+
+        grid-template-rows: repeat(
+            21,
             minmax(
                 calc(var(--container-width) * var(--row-height-scaling-factor)),
                 auto
