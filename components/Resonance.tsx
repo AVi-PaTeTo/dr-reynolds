@@ -1,5 +1,5 @@
 import Image from "next/image";
-import resonance from "../public/resonance.jpg";
+import resonance from "../public/resonance.webp";
 
 export default function Resonance() {
     return (
@@ -31,8 +31,8 @@ export default function Resonance() {
                     </p>
                 </div>
             </div>
-            <div className="row-start-21 row-end-23 col-start-1 col-end-11 md:col-start-1 md:col-end-14 md:row-start-17 md:row-end-18">
-                <button className="mx-auto px-[2em] py-[.8em] border-t-1 md:border-t-2 w-full h-fit font-[510] text-[calc((0.9-1)*1.2vw+1rem)] hover:text-[var(--primary)] hover:bg-[var(--accent)] border-[var(--accent)] transition-colors duration-400 ease-linear">
+            <div className="row-start-21 row-end-23 col-start-1 col-end-11 md:col-start-1 md:col-end-14 md:row-start-16 md:row-end-18">
+                <button className="mx-auto px-[2em] border-t-1 md:border-t-2 w-full h-full font-[600] tracking-wide text-[calc((0.9-1)*1.2vw+1rem)] hover:text-[var(--primary)] hover:bg-[var(--accent)] border-[var(--accent)] transition-colors duration-400 ease-linear">
                     GET IN TOUCH →
                 </button>
             </div>
