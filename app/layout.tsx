@@ -4,7 +4,12 @@ import "./globals.css";
 
 const myFont = localFont({
     variable: "--font-gopher",
-    src: "./fonts/Gopher-Regular.woff2",
+    src: [
+        { path: "./fonts/Gopher-Thin.ttf", weight: "300" },
+        { path: "./fonts/Gopher-Regular.ttf", weight: "400" },
+        { path: "./fonts/Gopher-Medium.ttf", weight: "510" },
+        { path: "./fonts/Gopher-Bold.ttf", weight: "600" },
+    ],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +26,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${myFont.variable} antialiased  `}>
                 <header className="absolute flex px-[3.75vw] py-[1vw] justify-between items-center z-2 w-full bg-[var(--primary)]">
-                    <span className="text-[calc((2-1)_*_1.2vw_+_1rem)] font-medium">
+                    <span className="text-[calc((2-1)_*_1.2vw_+_1rem)] font-[510]">
                         Lilac Template
                     </span>
                     <span className="text-[18px]">

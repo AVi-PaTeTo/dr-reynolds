@@ -3,7 +3,7 @@ import hero from "../public/hero2.jpg";
 
 export default function Hero() {
     return (
-        <section className="relative flex items-center w-full h-screen min-h-fit pt-[72px] bg-[var(--primary)] text-[var(--accent)]">
+        <section className="relative flex items-center w-full h-screen min-h-fit pt-[72px] bg-[var(--primary)] ">
             <div className=" hero-grid ">
                 <div
                     className="col-start-2 col-end-10 row-start-2 row-end-10 
@@ -41,7 +41,7 @@ export default function Hero() {
                             md:col-start-13 md:col-end-25 md:row-start-13 md:row-end-15  md
                             flex flex-col justify-center text-center"
                 >
-                    <button className="mx-auto px-[2em] py-[1em] border-1 w-fit h-fit font-bold text-[calc((0.9-1)*1.2vw+1rem)]">
+                    <button className="mx-auto px-[2em] py-[1em] border-1 w-fit h-fit font-[510] text-[calc((0.9-1)*1.2vw+1rem)] hover:text-[var(--primary)] hover:bg-[var(--accent)] border-[var(--accent)] transition-colors duration-400 ease-linear">
                         CONNECT WITH ME →
                     </button>
                 </div>
