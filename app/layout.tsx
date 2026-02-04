@@ -7,7 +7,7 @@ const myFont = localFont({
     src: [
         { path: "./fonts/Gopher-Thin.ttf", weight: "300" },
         { path: "./fonts/Gopher-Regular.ttf", weight: "400" },
-        { path: "./fonts/Gopher-Medium.ttf", weight: "510" },
+        { path: "./fonts/Gopher-Medium.ttf", weight: "500" },
         { path: "./fonts/Gopher-Bold.ttf", weight: "600" },
     ],
 });

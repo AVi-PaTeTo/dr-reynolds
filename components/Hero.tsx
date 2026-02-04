@@ -27,7 +27,7 @@ export default function Hero() {
                             md:col-start-13 md:col-end-25 md:row-start-7 md:row-end-13
                             flex flex-col justify-center items-center text-center leading-relaxed"
                 >
-                    <h1 className="mb-8 max-w-full sm:max-w-[70%] md:max-w-full text-[calc((4.5-1)*0.012*min(100vh,900px)+1rem)] leading-[calc(1.2em*(1+(1-4.5)/25))] md:text-[calc((4.5-1)*1.2vw+1rem)]">
+                    <h1 className="mb-8 max-w-full sm:max-w-[70%] md:max-w-full leading-[calc(1.2em*(1+(1-4.5)/25))] ">
                         Find your internal ease.
                     </h1>
                     <p className="text-lg max-w-full sm:max-w-[70%] md:max-w-full">

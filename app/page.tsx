@@ -3,6 +3,8 @@ import Introduction from "@/components/Introduction";
 import Recognition from "@/components/Recognition";
 import Resonance from "@/components/Resonance";
 import Speciality from "@/components/Speciality";
+import FAQ from "@/components/FAQ";
+
 export default function Home() {
     return (
         <div className="flex flex-col text-[var(--accent)] transition-all duration-400 ease">
@@ -11,6 +13,7 @@ export default function Home() {
             <Speciality />
             <Recognition />
             <Introduction />
+            <FAQ />
         </div>
     );
 }

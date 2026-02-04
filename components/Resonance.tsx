@@ -15,7 +15,7 @@ export default function Resonance() {
             </div>
             <div className="row-start-10 row-end-21 col-start-2 col-end-10 md:col-start-2 md:col-end-13 md:row-start-6 md:row-end-13">
                 <div>
-                    <h2 className="text-[calc(((3-1)*0.012*min(100vh,900px))+1rem)] md:text-[calc((3-1)*1.2vw+1rem)] leading-[calc(1.2em*(1+(1-3)/25))] mb-8 font-medium">
+                    <h2 className="leading-[calc(1.2em*(1+(1-3)/25))] mb-8">
                         From getting through it to actually thriving.
                     </h2>
                     <p className="my-4 text-[calc((1.2-1)*(0.012*min(100vh,900px))+1rem)] md:text-[calc((1.2-1)*1.2vw+1rem)]">
@@ -32,7 +32,7 @@ export default function Resonance() {
                 </div>
             </div>
             <div className="row-start-21 row-end-23 col-start-1 col-end-11 md:col-start-1 md:col-end-14 md:row-start-16 md:row-end-18">
-                <button className="mx-auto px-[2em] border-t-1 md:border-t-2 w-full h-full font-[600] tracking-wide text-[calc((0.9-1)*1.2vw+1rem)] hover:text-[var(--primary)] hover:bg-[var(--accent)] border-[var(--accent)] transition-colors duration-400 ease-linear">
+                <button className="mx-auto px-[2em] border-t-1 md:border-t-2 w-full h-full font-[500] tracking-wide text-[calc((0.9-1)*1.2vw+1rem)] hover:text-[var(--primary)] hover:bg-[var(--accent)] border-[var(--accent)] transition-colors duration-400 ease-linear">
                     GET IN TOUCH →
                 </button>
             </div>

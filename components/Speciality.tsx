@@ -7,16 +7,14 @@ export default function Speciality() {
     return (
         <section className="py-[6.6vmax]">
             <div className="w-full pb-[50px] px-[3.75vw]">
-                <p className="text-center text-[calc((3-1)*(0.012*min(100vh,900px))+1rem)] md:text-[calc((3-1)*1.2vw+1rem)] font-[510]">
+                <p className="text-center text-[calc((3-1)*(0.012*min(100vh,900px))+1rem)] md:text-[calc((3-1)*1.2vw+1rem)] font-[500]">
                     My Specialties
                 </p>
             </div>
-            <ul className="grid  tablet:grid-cols-2 tablet:grid-rows-2 md:grid-rows-none md:grid-cols-3 gap-5 px-[3.75vw]">
+            <ul className="wrap-break-word grid  tablet:grid-cols-2 tablet:grid-rows-2 md:grid-rows-none md:grid-cols-3 gap-5 px-[3.75vw]">
                 <li className="p-5 outline-1 outline-[var(--accent)] flex flex-col justify-between bg-[var(--secondary)]">
                     <div>
-                        <h2 className="font-[510] leading-tight text-[calc((1.2-1)*1.2vw+1rem)]">
-                            Anxiety & Burnout
-                        </h2>
+                        <h2 className="leading-tight">Anxiety</h2>
                         <div className="text-[calc((0.9-1)*1.2vw+1rem)] mt-[10%] tracking-wider">
                             <p className="mb-2">
                                 You appear functional on the outside, but
@@ -39,9 +37,7 @@ export default function Speciality() {
                 </li>
                 <li className="p-5 outline-1 outline-[var(--accent)] flex flex-col justify-between bg-[var(--secondary)]">
                     <div>
-                        <h2 className="font-[510] leading-tight text-[calc((1.2-1)*1.2vw+1rem)]">
-                            Trauma & Resilience
-                        </h2>
+                        <h2 className="leading-tight">Trauma</h2>
                         <div className="text-[calc((0.9-1)*1.2vw+1rem)] mt-[10%] tracking-wider">
                             <p className="mb-2">
                                 Past experiences still shape how your body
@@ -65,19 +61,16 @@ export default function Speciality() {
                 </li>
                 <li className="p-5 outline-1 outline-[var(--accent)] flex flex-col justify-between bg-[var(--secondary)]">
                     <div>
-                        <h2 className="font-[510] leading-tight text-[calc((1.2-1)*1.2vw+1rem)]">
-                            Performance Pressure
-                        </h2>
+                        <h2 className="leading-tight">Pressure</h2>
                         <div className="text-[calc((0.9-1)*1.2vw+1rem)] mt-[10%] tracking-wider">
                             <p className="mb-2">
-                                Past experiences still shape how your body
-                                responds to stress, relationships, and
-                                uncertainty.
+                                You’ve spent years pushing forward in demanding
+                                environments — often at the expense of yourself.
                             </p>
                             <p className="mt-2">
-                                We focus on paced, evidence-based work that
-                                restores a sense of safety and regulation in
-                                daily life.
+                                The work here is easing perfectionism,
+                                developing insight, and building a steadier
+                                relationship with yourself.
                             </p>
                         </div>
                     </div>
