@@ -11,7 +11,7 @@ export default function Speciality() {
                     My Specialties
                 </p>
             </div>
-            <ul className="grid grid-cols-2 grid-rows-2 md:grid-rows-none md:grid-cols-3 gap-5 px-[3.75vw]">
+            <ul className="grid  tablet:grid-cols-2 tablet:grid-rows-2 md:grid-rows-none md:grid-cols-3 gap-5 px-[3.75vw]">
                 <li className="p-5 outline-1 outline-[var(--accent)] flex flex-col justify-between bg-[var(--secondary)]">
                     <div>
                         <h2 className="font-[510] leading-tight text-[calc((1.2-1)*1.2vw+1rem)]">

@@ -2,7 +2,7 @@ import Image from "next/image";
 import recognition from "../public/recognition.webp";
 export default function Recognition() {
     return (
-        <section className="relative section-grid-recognition bg-[#cfd8dc] text-[var(--accent)]">
+        <section className="relative grid-sqs grid-flush [--grid-cols:8] [--grid-rows:24] md:[--grid-cols:24] md:[--grid-rows:21] bg-[#cfd8dc] text-[var(--accent)]">
             <div className="col-start-1 col-end-11 row-start-1 row-end-9 md:col-start-1 md:col-end-14 md:row-start-1 md:row-end-22">
                 <div className="overflow-hidden h-full">
                     <Image

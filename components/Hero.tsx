@@ -4,7 +4,7 @@ import hero from "../public/hero2.webp";
 export default function Hero() {
     return (
         <section className="relative flex items-center w-full h-screen min-h-fit pt-[72px] bg-[var(--primary)] ">
-            <div className=" hero-grid ">
+            <div className="w-full grid-sqs [--grid-cols:8] [--grid-rows:20] md:[--grid-cols:24] md:[--grid-rows:22]">
                 <div
                     className="col-start-2 col-end-10 row-start-2 row-end-10 
                             md:col-start-2 md:col-end-12 md:row-start-2 md:row-end-23 

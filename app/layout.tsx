@@ -26,7 +26,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${myFont.variable} antialiased  `}>
                 <header className="absolute flex px-[3.75vw] py-[1vw] justify-between items-center z-2 w-full bg-[var(--primary)]">
-                    <span className="text-[calc((2-1)_*_1.2vw_+_1rem)] font-[510]">
+                    <span className="md:text-[calc((2-1)_*_1.2vw_+_1rem)] text-[calc((1.2-1)*calc(.012*min(100vh,900px))+1rem)] font-[510]">
                         Lilac Template
                     </span>
                     <span className="text-[18px]">

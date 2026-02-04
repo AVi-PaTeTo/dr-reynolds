@@ -4,13 +4,19 @@ html {
     scroll-behavior: smooth;
 }
 
-* {
+/* * {
     scroll-margin-top: 100px;
+} */
+
+@theme {
+    --site-max-width: 3000px;
+    --row-factor: 0.0215;
+    --site-gutter: 6vw;
 }
 
 :root {
-    --primary: #f7eee6;
-    --secondary: #f0e0d1;
+    --primary: #ece6e0;
+    --secondary: #e7dace;
     --accent: #2c3e50;
 
     --site-title-font-font-size-value: 2;
@@ -34,181 +40,62 @@ body {
     background: var(--primary);
 }
 
-.hero-grid {
-    --grid-gap: 11px;
-    --site-gutter: 6vw;
-    --site-max-width: 3000px;
-
-    --container-width: min(
-        var(--site-max-width),
-        calc(100vw - var(--site-gutter) * 2)
-    );
-
-    --grid-gutter: calc(var(--site-gutter) - var(--grid-gap));
-
-    --cell-max-width: calc(
-        (var(--site-max-width) - (var(--grid-gap) * (8 - 1))) / 8
-    );
-
-    display: grid;
-    grid-template-columns:
-        minmax(var(--grid-gutter), 1fr)
-        repeat(8, minmax(0, var(--cell-max-width)))
-        minmax(var(--grid-gutter), 1fr);
-
-    grid-template-rows: repeat(20, minmax(24px, auto));
-    column-gap: var(--grid-gap);
-    row-gap: var(--grid-gap);
-
-    overflow-x: clip;
-}
-
-.section-grid-resonance {
-    --grid-gap: 0px;
-    --site-gutter: 6vw;
-    --site-max-width: 3000px;
-
-    --container-width: min(
-        var(--site-max-width),
-        calc(100vw - var(--site-gutter) * 2)
-    );
-
-    --grid-gutter: calc(var(--site-gutter) - var(--grid-gap));
-
-    --cell-max-width: calc(
-        (var(--site-max-width) - (var(--grid-gap) * (8 - 1))) / 8
-    );
-    --site-title-font-font-size-value: 2;
-
-    display: grid;
-    grid-template-columns:
-        minmax(var(--grid-gutter), 1fr)
-        repeat(8, minmax(0, var(--cell-max-width)))
-        minmax(var(--grid-gutter), 1fr);
-
-    grid-template-rows: repeat(22, minmax(24px, auto));
-    column-gap: var(--grid-gap);
-    row-gap: 11px;
-
-    overflow-x: clip;
-}
-
-.section-grid-recognition {
-    --grid-gap: 0px;
-    --site-gutter: 6vw;
-    --site-max-width: 3000px;
-
-    --container-width: min(
-        var(--site-max-width),
-        calc(100vw - var(--site-gutter) * 2)
-    );
-
-    --grid-gutter: calc(var(--site-gutter) - var(--grid-gap));
-
-    --cell-max-width: calc(
-        (var(--site-max-width) - (var(--grid-gap) * (8 - 1))) / 8
-    );
-    --site-title-font-font-size-value: 2;
-
-    display: grid;
-    grid-template-columns:
-        minmax(var(--grid-gutter), 1fr)
-        repeat(8, minmax(0, var(--cell-max-width)))
-        minmax(var(--grid-gutter), 1fr);
-
-    grid-template-rows: repeat(24, minmax(24px, auto));
-    column-gap: var(--grid-gap);
-    row-gap: 11px;
-
-    overflow-x: clip;
-}
-
-@media (min-width: 768px) {
-    .hero-grid {
+@media (width < 768px) {
+    :root {
         --site-gutter: 3.75vw;
-
-        --grid-gutter: calc(var(--site-gutter) - var(--grid-gap));
-
-        --cell-max-width: calc(
-            (var(--site-max-width) - (var(--grid-gap) * (24 - 1))) / 24
-        );
-
-        grid-template-columns:
-            minmax(var(--grid-gutter), 1fr)
-            repeat(24, minmax(0, var(--cell-max-width)))
-            minmax(var(--grid-gutter), 1fr);
-
-        grid-template-rows: repeat(
-            22,
-            minmax(calc(var(--container-width) * 0.0215), auto)
-        );
     }
+}
 
-    .section-grid-resonance {
-        --site-gutter: 3.75vw;
+@layer utilities {
+    .grid-sqs {
+        overflow-x: clip;
+        position: relative;
+        display: grid;
+        --inset-padding: 0px;
+        --col-gap-offset: 11px;
+        --row-gap-offset: 11px;
 
-        --row-height-scaling-factor: 0.0215;
+        --row-height: 24px;
+
+        column-gap: var(--col-gap-offset);
+        row-gap: var(--row-gap-offset);
+
+        --grid-gutter: calc(var(--site-gutter) - var(--col-gap-offset));
 
         --container-width: min(
             var(--site-max-width),
-            calc(100vw - var(--site-gutter) * 2)
+            calc(100vw - (var(--site-gutter) * 2 - (var(--inset-padding))))
         );
-
-        --grid-gutter: calc(var(--site-gutter) - var(--grid-gap));
 
         --cell-max-width: calc(
-            (var(--site-max-width) - (var(--grid-gap) * (8 - 1))) / 8
+            (
+                    var(--site-max-width) -
+                        (var(--col-gap-offset) * (var(--grid-cols) - 1))
+                ) /
+                var(--grid-cols)
         );
 
-        display: grid;
+        /* Grid Templates */
         grid-template-columns:
             minmax(var(--grid-gutter), 1fr)
-            repeat(24, minmax(0, var(--cell-max-width)))
+            repeat(var(--grid-cols, 10), minmax(0, var(--cell-max-width)))
             minmax(var(--grid-gutter), 1fr);
 
         grid-template-rows: repeat(
-            17,
-            minmax(
-                calc(var(--container-width) * var(--row-height-scaling-factor)),
-                auto
-            )
+            var(--grid-rows, 10),
+            minmax(var(--row-height), auto)
         );
-
-        overflow-x: clip;
     }
 
-    .section-grid-recognition {
-        --site-gutter: 3.75vw;
+    .grid-flush {
+        --col-gap-offset: 0px;
+    }
 
-        --row-height-scaling-factor: 0.0215;
-
-        --container-width: min(
-            var(--site-max-width),
-            calc(100vw - var(--site-gutter) * 2)
-        );
-
-        --grid-gutter: calc(var(--site-gutter) - var(--grid-gap));
-
-        --cell-max-width: calc(
-            (var(--site-max-width) - (var(--grid-gap) * (8 - 1))) / 8
-        );
-
-        display: grid;
-
-        grid-template-columns:
-            minmax(var(--grid-gutter), 1fr)
-            repeat(24, minmax(0, var(--cell-max-width)))
-            minmax(var(--grid-gutter), 1fr);
-
-        grid-template-rows: repeat(
-            21,
-            minmax(
-                calc(var(--container-width) * var(--row-height-scaling-factor)),
-                auto
-            )
-        );
-
-        overflow-x: clip;
+    /* Scaling Rows for Tablet/Desktop */
+    @media (min-width: 768px) {
+        .grid-sqs {
+            --row-height: calc(var(--container-width) * var(--row-factor));
+        }
     }
 }
 
@@ -219,6 +106,24 @@ body {
 
     --gap-grid: var(--grid-gap);
     --max-w-cell: var(--cell-max-width);
+}
+
+@theme {
+    --animate-pan: pan 10s linear infinite;
+
+    @keyframes pan {
+        0%,
+        100% {
+            transform: translateX(-50%);
+        }
+        50% {
+            transform: translateX(0%);
+        }
+    }
+}
+
+@theme {
+    --breakpoint-tablet: 576px;
 }
 
 @theme inline {

@@ -3,13 +3,13 @@ import resonance from "../public/resonance.webp";
 
 export default function Resonance() {
     return (
-        <section className="relative section-grid-resonance bg-[var(--secondary)]">
+        <section className="relative grid-sqs grid-flush [--grid-cols:8] [--grid-rows:22] md:[--grid-cols:24] md:[--grid-rows:17] bg-[var(--secondary)]">
             <div className="row-start-1 row-end-9 col-start-1 col-end-11 md:col-start-14 md:col-end-27 md:row-start-1 md:row-end-18">
                 <div className="h-full w-full overflow-hidden">
                     <Image
                         src={resonance}
                         alt=""
-                        className="aspect-square h-[269px] md:h-full md:w-full object-cover object-bottom md:object-bottom-left"
+                        className="aspect-square h-[269px] md:h-full w-full object-cover object-bottom md:object-bottom-left"
                     />
                 </div>
             </div>
