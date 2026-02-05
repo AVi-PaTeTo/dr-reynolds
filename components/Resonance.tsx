@@ -11,7 +11,7 @@ export default function Resonance() {
                 <div className="h-full w-full overflow-hidden">
                     <Image
                         src={resonance}
-                        alt=""
+                        alt="Balcony view overlooking the ocean with a bowl of fruit and an open book on a table."
                         className="aspect-square h-[269px] w-full object-cover object-bottom md:h-full md:object-bottom-left"
                     />
                 </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import faq from '@/src/assets/images/faq.jpg';
+import faq from '@/src/assets/images/faq.webp';
 import { useState } from 'react';
 
 export default function FAQ() {
@@ -23,7 +23,7 @@ export default function FAQ() {
                         <div className="mx-auto h-full overflow-hidden rounded-t-full md:h-auto md:w-full">
                             <Image
                                 src={faq}
-                                alt=""
+                                alt="Interior shot of a tall wooden bookshelf filled with books next to a classic floor lamp."
                                 className="h-full w-full object-cover"
                             />
                         </div>

@@ -14,7 +14,7 @@ export default function Hero() {
                             <Image
                                 src={hero}
                                 priority
-                                alt="Hero Image"
+                                alt="Silhouette of a woman standing by the ocean under a clear blue sky."
                                 className="aspect-auto h-[269px] w-fit object-cover md:h-fit"
                             />
                         </div>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import profile from '@/src/assets/images/profile.png';
-import badge from '@/src/assets/images/badge2.jpg';
+import profile from '@/src/assets/images/profile.webp';
+import badge from '@/src/assets/images/badge2.webp';
 export default function Introduction() {
     return (
         <section className="h-full max-h-screen w-full bg-slate-100 py-[6.6vmax]">
@@ -48,7 +48,7 @@ export default function Introduction() {
                         <div className="aspect-[2/3] h-full max-w-full overflow-hidden rounded-t-full">
                             <Image
                                 src={profile}
-                                alt="Hero Image"
+                                alt="Professional headshot of Dr. Maya Reynolds with long brown hair wearing a white top."
                                 className="h-full w-full object-cover"
                             />
                         </div>
@@ -62,7 +62,7 @@ export default function Introduction() {
                         <div className="aspect-square h-full overflow-hidden rounded-full md:h-auto md:w-full">
                             <Image
                                 src={badge}
-                                alt="Hero Image"
+                                alt="Modern living room corner with a blue velvet sofa, a potted plant, and abstract wall art."
                                 className="h-full w-full object-cover object-top"
                             />
                         </div>

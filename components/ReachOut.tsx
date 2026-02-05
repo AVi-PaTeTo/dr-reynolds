@@ -26,13 +26,14 @@ export default function ReachOut() {
                         data-animate="fade-up"
                         className="col-start-4 col-end-8 row-start-3 row-end-5 md:col-start-5 md:col-end-23 md:row-start-8 md:row-end-10"
                     >
-                        <button className="mx-auto flex h-fit w-fit gap-2 border-1 border-[var(--primary)] px-[2em] py-[1em] text-[calc((0.9-1)*(.012*min(100vh,900px))+1rem)] font-[500] tracking-wider transition-colors duration-400 ease-linear hover:cursor-pointer hover:bg-[var(--primary)] hover:text-[var(--accent)] focus:outline-[var(--primary)] md:text-[calc((0.9-1)*1.2vw+1rem)]">
+                        <button className="mx-auto flex h-fit w-fit items-center gap-2 border-1 border-[var(--primary)] px-[2em] py-[1em] text-[calc((0.9-1)*(.012*min(100vh,900px))+1rem)] font-[500] tracking-wider transition-colors duration-400 ease-linear hover:cursor-pointer hover:bg-[var(--primary)] hover:text-[var(--accent)] focus:outline-[var(--primary)] md:text-[calc((0.9-1)*1.2vw+1rem)]">
                             GET IN TOUCH
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="20"
                                 height="20"
                                 viewBox="0 0 24 24"
+                                className="shrink-0"
                             >
                                 <path
                                     fill="currentColor"

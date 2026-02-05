@@ -11,7 +11,7 @@ export default function Recognition() {
                     <div className="h-full overflow-hidden">
                         <Image
                             src={recognition}
-                            alt=""
+                            alt="Silhouette of a person facing the ocean waves under a bright sky."
                             className="h-[269px] object-cover md:h-full"
                         />
                     </div>

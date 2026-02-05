@@ -40,7 +40,7 @@ export default function Speciality() {
                     >
                         <Image
                             src={card1}
-                            alt=""
+                            alt="Man sitting on a window sill looking out at a bright, hazy seascape."
                             className="aspect-square object-cover object-bottom-left"
                         />
                     </div>
@@ -70,7 +70,7 @@ export default function Speciality() {
                     >
                         <Image
                             src={card2}
-                            alt=""
+                            alt="Rear view of a man sitting at a wooden chair surrounded by indoor plants."
                             className="aspect-square object-cover"
                         />
                     </div>
@@ -100,7 +100,7 @@ export default function Speciality() {
                     >
                         <Image
                             src={card3}
-                            alt=""
+                            alt="Hiker with a backpack climbing a rocky mountain trail with a valley view in the background."
                             className="aspect-square scale-150 object-cover object-center"
                         />
                     </div>

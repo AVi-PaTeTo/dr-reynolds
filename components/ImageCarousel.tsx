@@ -54,7 +54,7 @@ export function ImageCarousel({
                         <div className="relative h-full w-full overflow-hidden">
                             <Image
                                 src={img}
-                                alt=""
+                                alt="Contemporary open-plan office lounge with grey sofas, large windows, and neutral decor"
                                 fill
                                 className={imageClassName}
                                 priority={index === 0}
