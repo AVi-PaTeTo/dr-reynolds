@@ -15,7 +15,10 @@ export default function FAQ() {
     return (
         <section className="h-full bg-[var(--primary)] py-[6.6vmax]">
             <div className="grid-sqs relative h-fit [--grid-cols:8] [--grid-rows:18] md:[--grid-cols:24] md:[--grid-rows:17]">
-                <div className="fade-up relative col-start-2 col-end-10 row-start-1 row-end-7 md:col-start-4 md:col-end-12 md:row-start-1 md:row-end-18">
+                <div
+                    data-animate="fade-up"
+                    className="relative col-start-2 col-end-10 row-start-1 row-end-7 md:col-start-4 md:col-end-12 md:row-start-1 md:row-end-18"
+                >
                     <div className="absolute inset-0 flex items-center">
                         <div className="mx-auto h-full overflow-hidden rounded-t-full md:h-auto md:w-full">
                             <Image
@@ -27,13 +30,19 @@ export default function FAQ() {
                     </div>
                 </div>
                 <div className="relative col-start-2 col-end-10 row-start-8 row-end-10 md:col-start-14 md:col-end-26 md:row-start-4 md:row-end-6">
-                    <h3 className="text-[calc((3-1)*(.012*min(100vh,900px))+1rem)] font-[500] md:text-[calc((3-1)*1.2vw+1rem)]">
+                    <h3
+                        data-animate="fade-up"
+                        className="text-[calc((3-1)*(.012*min(100vh,900px))+1rem)] font-[500] md:text-[calc((3-1)*1.2vw+1rem)]"
+                    >
                         FAQs
                     </h3>
                 </div>
                 <div className="relative col-start-2 col-end-10 row-start-10 row-end-19 md:col-start-14 md:col-end-26 md:row-start-7 md:row-end-14">
                     <ul className="flex h-full flex-col">
-                        <li className="fade-up border-t-1 md:h-fit">
+                        <li
+                            data-animate="fade-up"
+                            className="border-t-1 md:h-fit"
+                        >
                             <h3 className="text-[calc((2.5-1)*(.012*min(100vh,900px))+1rem)] md:text-[calc((2.5-1)*1.2vw+1rem)]">
                                 <button
                                     onClick={() => handleTabClick('1')}
@@ -46,7 +55,10 @@ export default function FAQ() {
                                         <span className="absolute block h-[1px] w-full bg-[var(--accent)]"></span>
                                     </span>
 
-                                    <span className="fade-up block pl-[30px] leading-10 font-[500]">
+                                    <span
+                                        data-animate="fade-up"
+                                        className="block pl-[30px] leading-10 font-[500]"
+                                    >
                                         Do you take insurance?
                                     </span>
                                 </button>
@@ -61,7 +73,10 @@ export default function FAQ() {
                                 </div>
                             </div>
                         </li>
-                        <li className="fade-up border-t-1 md:h-fit">
+                        <li
+                            data-animate="fade-up"
+                            className="border-t-1 md:h-fit"
+                        >
                             <h3 className="text-[calc((2.5-1)*(.012*min(100vh,900px))+1rem)] md:text-[calc((2.5-1)*1.2vw+1rem)]">
                                 <button
                                     id="2"
@@ -74,7 +89,10 @@ export default function FAQ() {
                                         ></span>
                                         <span className="absolute block h-[1px] w-full bg-[var(--accent)]"></span>
                                     </span>
-                                    <span className="fade-up block pl-[30px] leading-10 font-[500]">
+                                    <span
+                                        data-animate="fade-up"
+                                        className="block pl-[30px] leading-10 font-[500]"
+                                    >
                                         What are your rates?
                                     </span>
                                 </button>
@@ -89,7 +107,10 @@ export default function FAQ() {
                                 </div>
                             </div>
                         </li>
-                        <li className="fade-up border-y-1 md:h-fit">
+                        <li
+                            data-animate="fade-up"
+                            className="border-y-1 md:h-fit"
+                        >
                             <h3 className="text-[calc((2.5-1)*(.012*min(100vh,900px))+1rem)] md:text-[calc((2.5-1)*1.2vw+1rem)]">
                                 <button
                                     id="3"
@@ -103,7 +124,10 @@ export default function FAQ() {
                                             ></span>
                                             <span className="absolute block h-[1px] w-full bg-[var(--accent)]"></span>
                                         </span>
-                                        <span className="fade-up block pl-[30px] leading-10 font-[500]">
+                                        <span
+                                            data-animate="fade-up"
+                                            className="block pl-[30px] leading-10 font-[500]"
+                                        >
                                             Do you have any openings?
                                         </span>
                                     </div>

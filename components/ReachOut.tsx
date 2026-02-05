@@ -4,10 +4,16 @@ export default function ReachOut() {
             <div className="h-fit py-[6.6vmax] text-center">
                 <div className="grid-sqs relative h-fit [--grid-cols:8] [--grid-rows:4] md:[--grid-cols:24] md:[--grid-rows:9]">
                     <div className="col-start-2 col-end-10 row-start-1 row-end-2 md:col-start-8 md:col-end-20 md:row-start-2 md:row-end-7">
-                        <h3 className="fade-up mb-8 text-[calc((2.5-1)*(.012*min(100vh,900px))+1rem)] md:text-[calc((2.5-1)*1.2vw+1rem)]">
+                        <h3
+                            data-animate="fade-up"
+                            className="mb-8 text-[calc((2.5-1)*(.012*min(100vh,900px))+1rem)] md:text-[calc((2.5-1)*1.2vw+1rem)]"
+                        >
                             Get started today.
                         </h3>
-                        <p className="mt-4 text-[calc((1.5-1)*(.012*min(100vh,900px))+1rem)] md:text-[calc((1.5-1)*1.2vw+1rem)]">
+                        <p
+                            data-animate
+                            className="mt-4 text-[calc((1.5-1)*(.012*min(100vh,900px))+1rem)] md:text-[calc((1.5-1)*1.2vw+1rem)]"
+                        >
                             Ready to take the first step towards a happier,
                             healthier you?
                             <br />
@@ -16,7 +22,10 @@ export default function ReachOut() {
                             you.
                         </p>
                     </div>
-                    <div className="fade-up col-start-4 col-end-8 row-start-3 row-end-5 md:col-start-5 md:col-end-23 md:row-start-8 md:row-end-10">
+                    <div
+                        data-animate="fade-up"
+                        className="col-start-4 col-end-8 row-start-3 row-end-5 md:col-start-5 md:col-end-23 md:row-start-8 md:row-end-10"
+                    >
                         <button className="mx-auto flex h-fit w-fit gap-2 border-1 border-[var(--primary)] px-[2em] py-[1em] text-[calc((0.9-1)*(.012*min(100vh,900px))+1rem)] font-[500] tracking-wider transition-colors duration-400 ease-linear hover:cursor-pointer hover:bg-[var(--primary)] hover:text-[var(--accent)] focus:outline-[var(--primary)] md:text-[calc((0.9-1)*1.2vw+1rem)]">
                             GET IN TOUCH
                             <svg

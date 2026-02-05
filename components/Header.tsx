@@ -16,6 +16,13 @@ export default function Header() {
             document.body.style.overflow = '';
         };
     }, [menuOpen]);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
     return (
         <>
             <header
@@ -35,7 +42,10 @@ export default function Header() {
                     ></div>
                 </span>
 
-                <span className="text-[calc((1.2-1)*calc(.012*min(100vh,900px))+1rem)] font-[510] md:text-[calc((2-1)_*_1.2vw_+_1rem)]">
+                <span
+                    onClick={scrollToTop}
+                    className="text-[calc((1.2-1)*calc(.012*min(100vh,900px))+1rem)] font-[510] hover:cursor-pointer md:text-[calc((2-1)_*_1.2vw_+_1rem)]"
+                >
                     Dr. Maya Reynolds
                 </span>
                 <span className="hidden text-[18px] lg:block">
