@@ -70,7 +70,7 @@ export function ImageCarousel({
                         key={index}
                         onClick={() => api?.scrollTo(index)}
                         className={cn(
-                            'h-1.5 rounded-full shadow-sm transition-all duration-300',
+                            'h-1.5 rounded-full shadow-sm transition-all duration-300 hover:cursor-pointer',
                             current === index
                                 ? 'w-8 bg-white'
                                 : 'w-1.5 bg-white/60 hover:bg-white/70'

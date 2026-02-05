@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import resonance from '../public/resonance.webp';
+import resonance from '@/src/assets/images/resonance.webp';
 
 export default function Resonance() {
     return (

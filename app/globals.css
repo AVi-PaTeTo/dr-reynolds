@@ -53,6 +53,16 @@ html {
     transform: translateY(0);
 }
 
+#navbar {
+    --nav-offset: 0;
+    transform: translateY(var(--nav-offset));
+    transition: transform 0.3s ease-out;
+}
+
+#navbar.nav-hidden {
+    --nav-offset: -100%;
+}
+
 h1 {
     font-size: calc(
         (var(--heading-1-size-value) - 1) * calc(0.012 * min(100vh, 900px)) +

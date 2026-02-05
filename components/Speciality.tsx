@@ -1,6 +1,6 @@
-import card1 from '../public/card1.webp';
-import card2 from '../public/card2.webp';
-import card3 from '../public/card3.webp';
+import card1 from '@/src/assets/images/card1.webp';
+import card2 from '@/src/assets/images/card2.webp';
+import card3 from '@/src/assets/images/card3.webp';
 import Image from 'next/image';
 
 export default function Speciality() {

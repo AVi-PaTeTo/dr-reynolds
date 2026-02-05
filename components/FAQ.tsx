@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import faq from '../public/faq.jpg';
+import faq from '@/src/assets/images/faq.jpg';
 import { useState } from 'react';
 
 export default function FAQ() {

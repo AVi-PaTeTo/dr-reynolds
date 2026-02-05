@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import profile from '../public/profile.png';
-import badge from '../public/badge2.jpg';
+import profile from '@/src/assets/images/profile.png';
+import badge from '@/src/assets/images/badge2.jpg';
 export default function Introduction() {
     return (
         <section className="h-full max-h-screen w-full bg-slate-100 py-[6.6vmax]">

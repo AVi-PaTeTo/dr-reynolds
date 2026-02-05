@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import recognition from '../public/resonance.jpg';
 import office from '../src/assets/images/office1.webp';
 import office2 from '../src/assets/images/office2.webp';
 import office3 from '../src/assets/images/office3.webp';

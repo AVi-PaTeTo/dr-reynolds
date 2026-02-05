@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import recognition from '../public/recognition.webp';
+import recognition from '@/src/assets/images/recognition.webp';
 export default function Recognition() {
     return (
         <section className="h-full">

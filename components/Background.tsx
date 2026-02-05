@@ -1,7 +1,5 @@
 'use client';
 
-import Image from 'next/image';
-import faq from '../public/faq.jpg';
 import { useState } from 'react';
 
 export default function Background() {
