@@ -55,7 +55,7 @@ export default function Header() {
             </header>
 
             <div
-                className={`fixed inset-0 z-1 transform-gpu bg-[var(--primary)] transition-all transition-discrete duration-600 ease-in-out starting:opacity-0 ${
+                className={`fixed inset-0 z-40 transform-gpu bg-[var(--primary)] transition-all transition-discrete duration-600 ease-in-out starting:opacity-0 ${
                     menuOpen ? 'block opacity-100' : 'hidden opacity-0'
                 } `}
             >
