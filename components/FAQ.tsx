@@ -67,8 +67,11 @@ export default function FAQ() {
                                 className={`grid overflow-hidden transition-all duration-200 ease-linear ${openTab === '1' ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}
                             >
                                 <div className="min-h-0">
-                                    <h3 className="pb-[30px] text-[calc((1.2-1)*1.2vw+1rem)] font-[500]">
-                                        Answer goes here.
+                                    <h3 className="pb-[30px] pl-6 text-[calc((1.2-1)*1.2vw+1rem)] font-[500]">
+                                        I do not accept insurance directly, but
+                                        I can provide a superbill that you may
+                                        submit to your insurance provider for
+                                        potential out-of-network reimbursement.
                                     </h3>
                                 </div>
                             </div>
@@ -101,8 +104,10 @@ export default function FAQ() {
                                 className={`grid overflow-hidden transition-all duration-200 ease-linear ${openTab === '2' ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}
                             >
                                 <div className="min-h-0">
-                                    <h3 className="pb-[30px] text-[calc((1.2-1)*1.2vw+1rem)] font-[500]">
-                                        Answer goes here.
+                                    <h3 className="pb-[30px] pl-6 text-[calc((1.2-1)*1.2vw+1rem)] font-[500]">
+                                        Rates vary depending on the type of
+                                        service. I’m happy to discuss current
+                                        fees when you get in touch.
                                     </h3>
                                 </div>
                             </div>
@@ -137,8 +142,10 @@ export default function FAQ() {
                                 className={`grid overflow-hidden transition-all duration-200 ease-linear ${openTab === '3' ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}
                             >
                                 <div className="min-h-0">
-                                    <h3 className="pb-[30px] text-[calc((1.2-1)*1.2vw+1rem)] font-[500]">
-                                        Answer goes here.
+                                    <h3 className="pb-[30px] pl-6 text-[calc((1.2-1)*1.2vw+1rem)] font-[500]">
+                                        Availability can change. The best way to
+                                        find out about current openings is to
+                                        contact me directly.
                                     </h3>
                                 </div>
                             </div>

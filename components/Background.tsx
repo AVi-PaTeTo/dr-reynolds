@@ -52,11 +52,8 @@ export default function Background() {
                                 >
                                     <div className="min-h-0">
                                         <h3 className="mx-auto w-[70%] pb-[30px] text-[calc((1.2-1)*1.2vw+1rem)]">
-                                            Euphorbia dianthus alchemilla
-                                            muscari lavandula anthurium
-                                            artemesia false artemesia moluccella
-                                            gladiolus cirsium trollius anthurium
-                                            prunus delphinium achillea.
+                                            Doctor of Psychology (PsyD) in
+                                            Clinical Psychology.
                                         </h3>
                                     </div>
                                 </div>
@@ -90,11 +87,8 @@ export default function Background() {
                                 >
                                     <div className="min-h-0">
                                         <h3 className="mx-auto w-[70%] pb-[30px] text-[calc((1.2-1)*1.2vw+1rem)]">
-                                            Euphorbia dianthus alchemilla
-                                            muscari lavandula anthurium
-                                            artemesia false artemesia moluccella
-                                            gladiolus cirsium trollius anthurium
-                                            prunus delphinium achillea.
+                                            Licensed Clinical Psychologist —
+                                            State of California.
                                         </h3>
                                     </div>
                                 </div>

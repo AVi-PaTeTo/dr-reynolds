@@ -46,7 +46,7 @@ export default function Header() {
                     onClick={scrollToTop}
                     className="text-[calc((1.2-1)*calc(.012*min(100vh,900px))+1rem)] font-[510] hover:cursor-pointer md:text-[calc((2-1)_*_1.2vw_+_1rem)]"
                 >
-                    Dr. Maya Reynolds
+                    Dr. Maya Reynolds, PsyD
                 </span>
                 <span className="hidden text-[18px] lg:block">
                     <span>Blog</span>
