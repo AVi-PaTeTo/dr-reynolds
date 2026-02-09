@@ -11,7 +11,7 @@ html {
 @theme {
     --site-max-width: 3000px;
     --row-factor: 0.0215;
-    --site-gutter: 6vw;
+    --site-gutter: 3.75vw;
 }
 
 :root {

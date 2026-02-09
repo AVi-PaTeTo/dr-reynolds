@@ -1,9 +1,12 @@
 'use client';
 
 import { useEffect } from 'react';
-
+import { usePathname } from 'next/navigation';
 export default function ScrollAnimationProvider() {
+    const pathname = usePathname();
     useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
         const timeout = setTimeout(() => {
             const elements =
                 document.querySelectorAll<HTMLElement>('[data-animate]');
@@ -24,7 +27,7 @@ export default function ScrollAnimationProvider() {
         }, 0);
 
         return () => clearTimeout(timeout);
-    }, []);
+    }, [pathname]);
 
     return null;
 }

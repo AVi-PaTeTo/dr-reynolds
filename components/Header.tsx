@@ -1,9 +1,14 @@
 'use client';
 
+import Link from 'next/link';
+
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const pathName = usePathname();
+    const currentPage = pathName.split('/')[1];
 
     useEffect(() => {
         if (menuOpen) {
@@ -17,12 +22,12 @@ export default function Header() {
         };
     }, [menuOpen]);
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
-    };
+    // const scrollToTop = () => {
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: 'smooth',
+    //     });
+    // };
     return (
         <>
             <header
@@ -42,15 +47,29 @@ export default function Header() {
                     ></div>
                 </span>
 
-                <span
-                    onClick={scrollToTop}
-                    className="text-[calc((1.2-1)*calc(.012*min(100vh,900px))+1rem)] font-[510] hover:cursor-pointer md:text-[calc((2-1)_*_1.2vw_+_1rem)]"
-                >
-                    Dr. Maya Reynolds, PsyD
-                </span>
-                <span className="hidden text-[18px] lg:block">
-                    <span>Blog</span>
-                    <span className="ml-10">Contact</span>
+                <Link href={'/'}>
+                    <span
+                        // onClick={scrollToTop}
+                        className="text-[calc((1.2-1)*calc(.012*min(100vh,900px))+1rem)] font-[510] hover:cursor-pointer md:text-[calc((2-1)_*_1.2vw_+_1rem)]"
+                    >
+                        Dr. Maya Reynolds, PsyD
+                    </span>
+                </Link>
+                <span className="hidden gap-10 text-[18px] lg:flex">
+                    <Link href="/blog">
+                        <button
+                            className={`hover:cursor-pointer ${currentPage === 'blog' ? 'border-b-1' : ''}`}
+                        >
+                            Blogs
+                        </button>
+                    </Link>
+                    <Link href={'/contact'}>
+                        <button
+                            className={`hover:cursor-pointer ${currentPage === 'contact' ? 'border-b-1' : ''}`}
+                        >
+                            Contact
+                        </button>
+                    </Link>
                 </span>
             </header>
 
@@ -59,13 +78,33 @@ export default function Header() {
                     menuOpen ? 'block opacity-100' : 'hidden opacity-0'
                 } `}
             >
-                <span className="flex h-full w-full flex-col justify-center delay-200">
+                <span className="flex h-full w-full flex-col justify-center text-[var(--accent)] delay-200">
                     <div className="w-full px-4 text-center text-[1.2em]">
-                        <h1>Blogs</h1>
+                        <Link
+                            onClick={() => setMenuOpen(false)}
+                            className="hover:cursor-pointer"
+                            href="/blog"
+                        >
+                            <h1
+                                className={`pointer-events-none ${currentPage === 'blog' ? 'underline underline-offset-1' : ''}`}
+                            >
+                                Blogs
+                            </h1>
+                        </Link>
                     </div>
                     <br />
                     <div className="w-full px-4 text-center text-[1.2em]">
-                        <h1>Contact</h1>
+                        <Link
+                            onClick={() => setMenuOpen(false)}
+                            className="hover:cursor-pointer"
+                            href="/contact"
+                        >
+                            <h1
+                                className={`pointer-events-none ${currentPage === 'contact' ? 'underline underline-offset-1' : ''}`}
+                            >
+                                Contact
+                            </h1>
+                        </Link>
                     </div>
                 </span>
             </div>

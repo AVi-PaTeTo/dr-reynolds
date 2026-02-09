@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export function Details() {
     return (
         <section className="py-[3.3vmax]">
@@ -61,27 +63,27 @@ export function Details() {
                         data-animate="fade-up"
                         className="mt-4 text-[calc((1.5-1)*(.012*min(100vh,900px))+1rem)] md:text-[calc((1.5-1)*1.2vw+1rem)]"
                     >
-                        <a
+                        <Link
                             className="underline underline-offset-[.2em]"
-                            href=""
+                            href="/"
                         >
                             Home
                             <br />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             className="underline underline-offset-[.2em]"
-                            href=""
+                            href="/contact"
                         >
                             Contact
                             <br />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             className="underline underline-offset-[.2em]"
-                            href=""
+                            href="/blog"
                         >
                             Blog
                             <br />
-                        </a>
+                        </Link>
                     </p>
                 </div>
             </div>

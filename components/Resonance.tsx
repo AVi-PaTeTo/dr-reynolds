@@ -16,7 +16,7 @@ export default function Resonance() {
                     />
                 </div>
             </div>
-            <div className="col-start-2 col-end-10 row-start-10 row-end-21 md:col-start-2 md:col-end-13 md:row-start-6 md:row-end-13">
+            <div className="col-start-2 col-end-10 row-start-10 row-end-21 md:col-start-2 md:col-end-13 md:row-start-3 md:row-end-15">
                 <div>
                     <h2
                         data-animate="fade-up"

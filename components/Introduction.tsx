@@ -3,7 +3,7 @@ import profile from '@/src/assets/images/profile.webp';
 import badge from '@/src/assets/images/badge2.webp';
 export default function Introduction() {
     return (
-        <section className="h-full max-h-screen w-full bg-slate-100 py-[6.6vmax]">
+        <section className="h-full w-full bg-slate-100 py-[6.6vmax]">
             <div className="grid-sqs relative max-h-screen [--grid-cols:8] [--grid-rows:20] md:[--grid-cols:24] md:[--grid-rows:18]">
                 <div className="col-start-2 col-end-10 row-start-10 row-end-17 md:col-start-3 md:col-end-14 md:row-start-5 md:row-end-13">
                     <h2
@@ -59,11 +59,11 @@ export default function Introduction() {
                         data-animate="fade-up"
                         className="absolute inset-0 flex items-center"
                     >
-                        <div className="aspect-square h-full overflow-hidden rounded-full md:h-auto md:w-full">
+                        <div className="aspect-square h-full overflow-hidden rounded-full md:h-full">
                             <Image
                                 src={badge}
                                 alt="Modern living room corner with a blue velvet sofa, a potted plant, and abstract wall art."
-                                className="h-full w-full object-cover object-top"
+                                className="object-cover object-top"
                             />
                         </div>
                     </div>

@@ -20,11 +20,11 @@ export default function FAQ() {
                     className="relative col-start-2 col-end-10 row-start-1 row-end-7 md:col-start-4 md:col-end-12 md:row-start-1 md:row-end-18"
                 >
                     <div className="absolute inset-0 flex items-center">
-                        <div className="mx-auto h-full overflow-hidden rounded-t-full md:h-auto md:w-full">
+                        <div className="mx-auto aspect-[2/3] h-full overflow-hidden rounded-t-full md:h-fit">
                             <Image
                                 src={faq}
                                 alt="Interior shot of a tall wooden bookshelf filled with books next to a classic floor lamp."
-                                className="h-full w-full object-cover"
+                                className="object-cover"
                             />
                         </div>
                     </div>
