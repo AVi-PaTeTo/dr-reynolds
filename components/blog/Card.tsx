@@ -1,7 +1,13 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
-export default function Card(props) {
+type postCard = {
+    image: { image: StaticImageData; alt: string };
+    title: string;
+    date: string;
+};
+
+export default function Card({ image, title, date }: postCard) {
     function createSlug(string: string) {
         const slug = string.toLowerCase().replace(/[^a-zA-Z0-9\s]/g, '');
         return slug.replaceAll(' ', '_');
@@ -10,7 +16,7 @@ export default function Card(props) {
     return (
         <div className="group relative">
             <Link
-                href={`/blog/${createSlug(props.title)}`}
+                href={`/blog/${createSlug(title)}`}
                 className="absolute inset-0 z-10 hover:cursor-pointer"
             ></Link>
             <div
@@ -18,14 +24,14 @@ export default function Card(props) {
                 className="mb-[3vw] overflow-hidden md:mb-7"
             >
                 <Image
-                    src={props.image.image}
-                    alt={props.image.alt}
+                    src={image.image}
+                    alt={image.alt}
                     className="transition-transform duration-600 ease-in-out group-hover:scale-105"
                 />
             </div>
             <div className="pointer-events-none relative z-15 leading-9">
                 <span data-animate="fade-up" className="mb-[1vw] block">
-                    {props.date}
+                    {date}
                 </span>
                 <div
                     data-animate="fade-up"
@@ -33,10 +39,10 @@ export default function Card(props) {
                 >
                     <h2 className="cursor-text select-text">
                         <Link
-                            href={`/blog/${createSlug(props.title)}`}
+                            href={`/blog/${createSlug(title)}`}
                             className="hover:underline"
                         >
-                            {props.title}
+                            {title}
                         </Link>
                     </h2>
                 </div>
