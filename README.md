@@ -1,5 +1,5 @@
-LIVE AT: https://dr-reynolds.vercel.app/
-
+[LIVE](https://dr-reynolds.vercel.app/) (just the homepage)<br/>
+[Preview with contact and blog pages](https://dr-reynolds-git-feature-blog-and-contact-avis-projects-7b492ef0.vercel.app/) (preview of feature branch)
 ---
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
