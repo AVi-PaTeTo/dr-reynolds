@@ -21,7 +21,6 @@ export default function Home() {
             <FAQ />
             <Background />
             <ReachOut />
-            <Details />
         </div>
     );
 }

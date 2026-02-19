@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="w-full bg-slate-200 py-[calc(10vmax/10)]">
+        <footer className="h-fit w-full bg-slate-200 py-[calc(10vmax/10)]">
             <div className="grid-sqs [--grid-cols:8] [--grid-rows:4] md:[--grid-cols:24] md:[--grid-rows:5]">
                 <div className="col-start-2 col-end-10 row-start-1 row-end-3 md:col-start-2 md:col-end-26 md:row-start-2 md:row-end-4">
                     <div
